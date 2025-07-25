@@ -10,7 +10,7 @@ export default async function handler(req,res){
       payment_method_types:['card'],
       customer_email:email,
       line_items:[{ price:process.env.NEXT_PUBLIC_PRICE_ID, quantity:1 }],
-      success_url:`${process.env.NEXT_PUBLIC_SITE_URL}/?success=1`,
+      success_url:`${process.env.NEXT_PUBLIC_SITE_URL}/realtime`,
       cancel_url:`${process.env.NEXT_PUBLIC_SITE_URL}/?canceled=1`
     });
     res.status(200).json({ id: session.id });
