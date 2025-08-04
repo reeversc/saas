@@ -1,2 +1,16 @@
 node_modules
 .env
+.vercel
+
+# Build artifacts
+.next/
+*.log
+
+# OS files
+.DS_Store
+
+# Google OAuth secrets
+client_secret_*.json
+
+# Development files
+.claude/
